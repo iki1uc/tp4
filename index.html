@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TP4 – Minimal System</title>
+    <style>
+        body {
+            background: #111;
+            color: #0f0;
+            font-family: monospace;
+            padding: 20px;
+        }
+        pre {
+            background: #222;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #444;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+<h2>TP4 – Minimal System Geometry</h2>
+
+<pre id="output">loading…</pre>
+
+<script src="4e.js"></script>
+<script>
+    const out = document.getElementById("output");
+    const result = tp4_scan();
+
+    out.textContent =
+        "Quadrate:\n" +
+        JSON.stringify(result.quadrate, null, 2) +
+        "\n\nVerbindungen:\n" +
+        JSON.stringify(result.verbindungen, null, 2) +
+        "\n\nForm:\n" +
+        result.form;
+</script>
+
+</body>
+</html>
 
