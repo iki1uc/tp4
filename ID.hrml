@@ -1,1 +1,52 @@
+// TP4-ID – allumfassende Grundform
+
+const TP4_ID = {
+    meta: {
+        name: "TP4",
+        position: "Obere Schicht",
+        purpose: "Grundform des TP-Systems",
+        version: "1.0"
+    },
+
+    quadrate: {
+        kern: {
+            id: "TP4-KERN",
+            role: "Quelle",
+            signal: "Ich existiere",
+            link: "TP4-KERN → TP4-MONITOR"
+        },
+        monitor: {
+            id: "TP4-MONITOR",
+            role: "Spiegel",
+            signal: "Er existiert wirklich",
+            link: "TP4-MONITOR → TP4-SCHED"
+        },
+        sched: {
+            id: "TP4-SCHED",
+            role: "Ordner",
+            signal: "Ich habe es geordnet",
+            link: "TP4-SCHED → TP4-UI"
+        },
+        ui: {
+            id: "TP4-UI",
+            role: "Fenster",
+            signal: "Ich zeige es",
+            link: "TP4-UI → TP4-KERN"
+        }
+    },
+
+    topology: {
+        form: "[ Kern ] —— [ Monitor ]\n   |            |\n   |            |\n[ Sched ] —— [ UI ]",
+        type: "Kreuz-Topologie",
+        closed_loop: true
+    },
+
+    relations: {
+        next_layer: "TP8",
+        expands_to: "TP12",
+        is_base_of: "TP-System"
+    }
+};
+
+console.log(TP4_ID);
 
