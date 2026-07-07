@@ -1,9 +1,9 @@
-# TP4 – Grundform des TP-Systems
+# TP4 – Allumfassende Grundform des TP-Systems
 
-TP4 ist die **Basis-Geometrie** des gesamten TP-Systems.  
-Es besteht aus **vier Quadraten**, die jeweils eine Rolle tragen:
+TP4 ist die **Basis-Schicht** des gesamten TP-Systems.  
+Es besteht aus **vier Quadraten**, die jeweils eine definierte Rolle tragen:
 
- Kern ] —— [ Monitor ]
+[ Kern ] —— [ Monitor ]
 |            |
 |            |
 [ Sched ] —— [ UI ]
@@ -31,17 +31,27 @@ Die vier Quadrate sind **kreuzförmig** verbunden:
 Diese Form erzeugt eine **geschlossene Stabilität**,  
 die später für TP8 und TP12 entscheidend ist.
 
-## Zweck von TP4
+## TP4-ID
 
-TP4 ist:
+Die TP4-ID umfasst:
 
-- die **oberste Schicht**  
-- die **Grundform**  
-- die **Start-Geometrie**  
-- die **Basis für TP8 und TP12**
+- Meta-Daten  
+- Quadrate mit IDs  
+- Rollen  
+- Signale  
+- Verbindungen  
+- Topologie  
+- System-Beziehungen  
 
-Ohne TP4 gibt es **kein TP-System**.
+Sie bildet die vollständige Identität der TP4-Schicht.
+
+## System-Position
+
+- TP4 ist die **obere Schicht**  
+- TP8 ist die **Mitte**  
+- TP12 ist die **untere Schicht**  
+- TP4 ist die **Basis des gesamten TP-Systems**
 
 ## Code
 
-Der TP4-Code liegt in `4e.js` und bildet die vier Quadrate + Signale ab.
+Der TP4-ID-Code liegt in `4e.js` und bildet die vier Quadrate + Signale + Topologie ab.
